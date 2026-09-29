@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CareerMate AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CareerMate AI</h1>
+        <p class="subtitle">Your Personal AI Career Assistant</p>
+
+        <div class="card">
+
+            <h2>👤 Student Profile</h2>
+
+            <label>Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Career Goal</label>
+            <select id="career">
+                <option value="">Select your career goal</option>
+                <option value="Software Developer">Software Developer</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="AI Engineer">AI Engineer</option>
+            </select>
+
+            <label>Your Skills</label>
+            <input type="text" id="skills"
+                   placeholder="Example: C, Python, HTML">
+
+            <button onclick="saveProfile()">Save My Profile</button>
+
+            <p id="memoryMessage"></p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>🤖 CareerMate AI Agent</h2>
+
+            <p>
+                Tell CareerMate what you want help with.
+            </p>
+
+            <input type="text"
+                   id="question"
+                   placeholder="Example: What should I learn next?">
+
+            <button onclick="askCareerMate()">Ask CareerMate</button>
+
+            <div id="response"></div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>🧠 Persistent Memory</h2>
+
+            <p id="memory"></p>
+
+            <button onclick="clearMemory()">
+                Clear Memory
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h2>📋 My Career Plan</h2>
+
+            <ul id="plan">
+                <li>Save your profile to generate your career plan.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
